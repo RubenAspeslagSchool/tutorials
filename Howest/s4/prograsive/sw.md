@@ -28,3 +28,50 @@ self.addEventListener('install', (event) => {
   );
 });
 ```
+
+## api cache
+
+```js
+self.addEventListener("fetch", e => {
+  const myFetcher = staleWhileRevalidate;
+  e.respondWith(myFetcher(e));
+});
+
+
+const cacheOnly = async e => {
+    const cache = await caches.open(CACHE_NAME);
+    return cache.match(e.request);
+}
+
+const networkOnly = async e => {
+    return fetch(e.request);
+}
+
+const cacheFirst = async e => {
+  const cache = await caches.open(CACHE_NAME);
+  const response = await cache.match(e.request);
+  if (response !== undefined) return response;
+  else return fetch(e.request);
+}
+
+const networkFirst = async e => {
+  try {
+    return await fetch(e.request);
+  } catch {
+    const cache = await caches.open(CACHE_NAME);
+    return cache.match(e.request);
+  }
+}
+
+const staleWhileRevalidate = async e => {
+    const cache = await caches.open(CACHE_NAME);
+    let response = await cache.match(e.request);
+    if (response !== undefined) cache.add(e.request);
+    else {
+        response = await fetch(e.request);
+        cache.put(e.request.url, response.clone());
+    }
+    return response;
+}
+
+```
