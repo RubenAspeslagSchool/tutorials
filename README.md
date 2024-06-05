@@ -11,5 +11,7 @@
       - [sw](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/sw.md)
       - [localforage](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/localforage.md)
       - [push notifications](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/pushNotifications.md)
+      - [responsive disign]  (https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/responsive%20disign.md)
+      -
   - [s5](https://github.com/RubenAspeslagSchool/tutorials/tree/main/Howest/s5)
   - [s6](https://github.com/RubenAspeslagSchool/tutorials/tree/main/Howest/s6)
