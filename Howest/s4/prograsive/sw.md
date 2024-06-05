@@ -1,4 +1,35 @@
-# service worker
+# service worker and manifest
+
+
+## manifest.json
+
+```json
+{
+    "name": "TastyTable",
+    "short_name": "TastyTable",
+    "description": "Your go-to recipe app that brings excitement back into your kitchen.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ff6347",
+    "icons": [
+      {
+        "src": "icons/tasty-table-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/tasty-table-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "scope": "/",
+    "orientation": "portrait-primary",
+    "lang": "en-US"
+  }
+  
+```
 
 ## cache pages
 
@@ -32,6 +63,7 @@ self.addEventListener('install', (event) => {
 ## api cache
 
 ```js
+
 self.addEventListener("fetch", e => {
   const myFetcher = staleWhileRevalidate;
   e.respondWith(myFetcher(e));

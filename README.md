@@ -10,5 +10,6 @@
       - [scss conversion.md](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/scss%20conversion.md)
       - [sw](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/sw.md)
       - [localforage](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/localforage.md)
+      - [push notifications](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/pushNotifications.md)
   - [s5](https://github.com/RubenAspeslagSchool/tutorials/tree/main/Howest/s5)
   - [s6](https://github.com/RubenAspeslagSchool/tutorials/tree/main/Howest/s6)
