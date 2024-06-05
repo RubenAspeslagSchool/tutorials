@@ -2,7 +2,7 @@
 
 command:  `npm install localforage`   `<script src="">  </script>`
 
-coppy content from [localforagehere libery]()
+coppy content from [localforagehere libery](https://github.com/RubenAspeslagSchool/tutorials/blob/main/Howest/s4/prograsive/localforage.js)
 
 
 ```js
