@@ -1,4 +1,12 @@
+## tools
+
+- [cloude AI](https://claude.ai/chat/7ec73ced-b3e4-4116-a5bf-03dc0d4275d6)
+
+- [chat gpt](https://chatgpt.com/?oai-dm=1)
+
 # [tutorials](https://github.com/RubenAspeslagSchool/tutorials)
+
+
 
 - [HOWEST](https://github.com/RubenAspeslagSchool/tutorials/Howest)
 
